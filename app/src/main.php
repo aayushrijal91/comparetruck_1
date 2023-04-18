@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row align-items-center gy-5 gx-md-5">
             <div class="col-xl-6 col-xxl-5">
-                <form action="./src/form.php" method="POST">
+                <form action="./src/form.php" method="POST" id="heroForm">
                     <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                     <div class="fs-48 fw-700 d-flex align-items-center gap-3 lh-1 heading">
                         <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +66,7 @@
                             <div class="form-group">
                                 <label for="phoneInput">Your Number</label>
                                 <input type="tel" id="phoneInput" name="phoneNumber" class="form-control" placeholder="Phone Number" required>
+                                <small id="phoneError" class="validationError">Please enter a valid phone number</small>
                             </div>
                         </div>
                         <div class="col-md-6">
